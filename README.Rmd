@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # covidExplorer
 
 <!-- badges: start -->
+[![R build status](https://github.com/etc5523-2020/r-package-assessment-petestylianos/workflows/R-CMD-check/badge.svg)](https://github.com/etc5523-2020/r-package-assessment-petestylianos/actions)
 <!-- badges: end -->
 
 covidExplorer contains a Shiny app with summaries, analytics and news related to COVID-19. Download the package and launch the Shiny app to interactively browse data regarding the spread of COVID-19 in various countries.

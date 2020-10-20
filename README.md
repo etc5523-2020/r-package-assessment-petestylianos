@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![R build
+status](https://github.com/etc5523-2020/r-package-assessment-petestylianos/workflows/R-CMD-check/badge.svg)](https://github.com/etc5523-2020/r-package-assessment-petestylianos/actions)
 <!-- badges: end -->
 
 covidExplorer contains a Shiny app with summaries, analytics and news
