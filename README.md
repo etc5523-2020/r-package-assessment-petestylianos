@@ -26,9 +26,8 @@ devtools::install_github("etc5523-2020/r-package-assessment-petestylianos")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+To launch the app:
 
 ``` r
 library(covidExplorer)
-## basic example code
 ```
