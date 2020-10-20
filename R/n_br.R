@@ -12,7 +12,7 @@
 #' @export
 #'
 #'
-#' @importFrom htmltools br
+#' @import htmltools
 #'
 #' @examples
 #' \dontrun{
@@ -24,5 +24,5 @@
 #' }
 #'
 n_br <- function(n) {
-  HTML(strrep(br(), n))
+  htmltools::HTML(strrep(htmltools::br(), n))
 }
