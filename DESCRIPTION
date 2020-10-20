@@ -1,5 +1,5 @@
 Package: covidExplorer
-Title: Contains a Shiny App with summaries,analytics and news about COVID-19
+Title: Contains a Shiny App with Summaries, Analytics and News related to COVID-19
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Panagiotis",
@@ -9,12 +9,18 @@ Authors@R:
            )
 Description: The package deploys a shiny app that allows users to interactively
         browse data regarding the spread of COVID-19 in various countries. The
-        original purpose of the app is to offer a summary of information regarding 
+        purpose of the app is to offer a summary of information regarding 
         COVID-19 with emphasis being given on new cases and latest implemented 
-         measures. Figures in the Measures tab can be exported as png images.
+        measures. The datasets are being updated daily. Figures in the Measures tab can be exported as png images.
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/etc5523-2020/r-package-assessment-petestylianos.git
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     shiny
+License: GPL-3
+Suggests: 
+    testthat
+Depends: 
+    R (>= 2.10)
