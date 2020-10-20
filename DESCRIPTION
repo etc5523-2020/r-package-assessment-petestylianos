@@ -19,7 +19,31 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     shiny,
-    htmltools
+    htmltools,
+    shinycssloaders,
+    classInt,
+    coronavirus,
+    COVID19,
+    DT,
+    leaflet,
+    ggthemes,
+    glue,
+    htmlwidgets,
+    maps,
+    patchwork,
+    plotly,
+    RColorBrewer,
+    scales,
+    shinydashboard,
+    shinydashboardPlus,
+    shinythemes,
+    shinyWidgets,
+    stringr,
+    tidycovid19,
+    tidytext,
+    dplyr,
+    twitteR,
+    magrittr
 License: GPL-3
 Suggests: 
     testthat

@@ -2,7 +2,7 @@
 % Please edit documentation in R/countryInput.R
 \name{countryInput}
 \alias{countryInput}
-\title{Custom Country Select Input.}
+\title{Custom Country Select Input}
 \usage{
 countryInput(id, x)
 }

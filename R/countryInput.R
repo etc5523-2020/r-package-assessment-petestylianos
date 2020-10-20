@@ -1,4 +1,4 @@
-#' Custom Country Select Input.
+#' Custom Country Select Input
 #'
 #' Creates a Shiny Select Input with custom label style to select a country from
 #' a columns dataset.
