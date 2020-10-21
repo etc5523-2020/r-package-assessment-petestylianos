@@ -1,5 +1,8 @@
 test_that("custom slider works", {
 
+  testtat::expect_error(countryInput(id=NULL, "country"))
+
+  testtat::expect_error(countryInput("id", x = NULL))
 
   testthat::expect_equal(countryInput("id", "country"), "<div class='form-group shiny-input-container'>
                            <label class='control-label' for='id'>
