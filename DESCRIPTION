@@ -2,48 +2,18 @@ Package: covidExplorer
 Title: Contains a Shiny App with Summaries, Analytics and News related to COVID-19
 Version: 0.1.0
 Authors@R: 
-    person(given = "Panagiotis",
-           family = "Stylianos",
-           role = c("aut", "cre"),
-           email = "pete.styl@gmail.com"
-           )
+    person("Panagiotis", "Stylianos", email = "pete.styl@gmail.com" ,role = c("aut", "cre"))
 Description: The package deploys a shiny app that allows users to interactively
         browse data regarding the spread of COVID-19 in various countries. The
         purpose of the app is to offer a summary of information regarding 
         COVID-19 with emphasis being given on new cases and latest implemented 
-        measures. The datasets are being updated daily. Figures in the Measures tab can be exported as png images.
+        measures. Finally, the app gives the user to scrape data from Twitter. 
+        The datasets are being updated daily. Figures in the Measures tab can be exported as png images.
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/etc5523-2020/r-package-assessment-petestylianos.git
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-Imports: 
-    shiny,
-    htmltools,
-    shinycssloaders,
-    classInt,
-    coronavirus,
-    COVID19,
-    DT,
-    leaflet,
-    ggthemes,
-    glue,
-    htmlwidgets,
-    maps,
-    patchwork,
-    plotly,
-    RColorBrewer,
-    scales,
-    shinydashboard,
-    shinydashboardPlus,
-    shinythemes,
-    shinyWidgets,
-    stringr,
-    tidycovid19,
-    tidytext,
-    dplyr,
-    twitteR,
-    magrittr
 License: GPL-3
 Suggests: 
     testthat

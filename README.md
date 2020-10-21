@@ -34,10 +34,6 @@ library(covidExplorer)
 covidExplorer::launch_app()
 ```
 
-This is how the first tab of the app looks like:
-
-<img src="man/figures/map.png" width="100%" />
-
 ## Twitter Tab
 
 To be able to search Twitter on your RSudio you need to be able to run

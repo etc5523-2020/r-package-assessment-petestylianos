@@ -42,12 +42,6 @@ library(covidExplorer)
 covidExplorer::launch_app()
 ```
 
-This is how the first tab of the app looks like:
-
-```{r, echo=FALSE}
-knitr::include_graphics("man/figures/map.png")
-```
-
 
 ## Twitter Tab {#tweet}
 

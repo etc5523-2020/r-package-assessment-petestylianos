@@ -1,5 +1,39 @@
+# This script produces all the datasets and objects required in the app's server.
+# The covidExplorer::launch_app() function sources this script and runs it before deploying the app
+# to update all datasets.
 
-# Apple city data
+
+library(classInt)
+library(coronavirus)
+library(COVID19)
+library(DT)
+library(leaflet)
+library(ggthemes)
+library(glue)
+library(htmlwidgets)
+library(maps)
+library(patchwork)
+library(plotly)
+library(RColorBrewer)
+library(scales)
+library(shiny)
+library(shinycssloaders)
+library(shinydashboard)
+library(shinydashboardPlus)
+library(shinythemes)
+library(shinyWidgets)
+library(stringr)
+library(tidycovid19)
+library(tidytext)
+library(tidyverse)
+library(twitteR)
+
+
+
+# Get latest data
+coronavirus::update_dataset()
+
+# Apple city-level data
 covid <- tidycovid19::download_apple_mtr_data(type = "country_city", cached = TRUE)
 
 # All data from tidycovid19 package in a country level
@@ -10,11 +44,11 @@ covid_city <- inner_join(covid, covid_all, by = c("iso3c", "date")) %>%
   select(c(date, country, city, driving, walking, transit ))
 
 
-# Data related to measures per country from the tidycovid package
+# Data related to measures per country from the tidycovid19 package
 cases_covid <- tidycovid19::download_acaps_npi_data(cached = TRUE)
 
 
-# Covid Measurs table
+# Covid Measures table
 covid_measures <- covid_all %>%
   select(c(date, country, soc_dist, lockdown, mov_rest, pub_health, gov_soc_econ )) %>%
   pivot_longer(cols = -c(date, country),  names_to = "measure", values_to = "effect")
@@ -28,6 +62,8 @@ levels(covid_measures$measure) <- c("Governance and socio-economic measures" ,
                                     "Public health measures",
                                     "Social distancing"
 )
+
+
 
 ## Calculate country stats
 country_stats <- covid_all %>%
@@ -52,7 +88,10 @@ global_stats <- covid_all %>%
             death_rate = total_deaths/total_infected,
             infected_rate = total_infected/sum(population, na.rm = T))
 
-# Data to produce the leafelt map
+
+
+# Data to produce the leaflet map
+
 corona_map <- coronavirus %>%
   filter(type == "confirmed") %>%
   group_by(country) %>%
@@ -63,6 +102,7 @@ corona_map <- coronavirus %>%
 corona_map <- corona_map %>%
   rename(lng = long) %>%
   na.omit()
+
 
 # obtain coordiantes
 
@@ -82,10 +122,13 @@ values <- c(9, 10^4,  10^5, 5 * 10 ^ 5, 10^6, 2 * 10^6, 4 * 10^6, max(corona_map
 
 interval <- values[values >9 & values < 7000000]
 
-# javascript to enable click event
+
+# javascript to enable click event in the Measures Tab
+
 js <- c(
   "function(el, x){",
   "  el.on('plotly_legendclick', function(evtData) {",
   "    Shiny.setInputValue('trace', evtData.data[evtData.curveNumber].name);",
   "  });",
   "}")
+
