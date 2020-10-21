@@ -16,10 +16,13 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 License: GPL-3
 Suggests: 
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
 Depends: 
     R (>= 2.10)
 Imports: 
     htmltools,
     shinycssloaders,
     shiny
+VignetteBuilder: knitr
