@@ -34,6 +34,12 @@ library(covidExplorer)
 covidExplorer::launch_app()
 ```
 
+<p>
+
+<img src="man/figures/img.gif"/>
+
+</p>
+
 ## Twitter Tab
 
 To be able to search Twitter on your RSudio you need to be able to run
