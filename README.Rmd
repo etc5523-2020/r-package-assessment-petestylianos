@@ -20,7 +20,10 @@ knitr::opts_chunk$set(
 [![R build status](https://github.com/etc5523-2020/r-package-assessment-petestylianos/workflows/R-CMD-check/badge.svg)](https://github.com/etc5523-2020/r-package-assessment-petestylianos/actions)
 <!-- badges: end -->
 
-covidExplorer contains a Shiny app with summaries, analytics and news related to COVID-19. Download the package and launch the Shiny app to interactively browse data regarding the spread of COVID-19 in various countries.
+covidExplorer contains a Shiny app with summaries, analytics and news related to COVID-19. Download the package and launch the Shiny app to interactively browse data and news regarding the spread of COVID-19 in various countries. The app also enables the user to scrape data from Twitter.
+Refer to section [Twitter Tab](#tweet) for more info.
+
+
 
 ## Installation
 
@@ -34,6 +37,32 @@ devtools::install_github("etc5523-2020/r-package-assessment-petestylianos")
 
 To launch the app:
 
-```{r example}
+```{r eval = FALSE}
 library(covidExplorer)
+covidExplorer::launch_app()
 ```
+
+This is how the app looks like:
+
+```{r, echo=FALSE}
+knitr::include_graphics("man/figures/img.gif")
+```
+
+
+## Twitter Tab {#tweet}
+
+To be able to search Twitter on your RSudio you need to be able to run the following commands: 
+
+api_key <- 'YOUR API KEY' 
+
+api_secret <- 'YOUR API SECRET' 
+
+access_token <- 'YOUR ACCESS TOKEN' 
+
+access_token_secret <- 'YOUR ACCESS TOKEN SECRET' 
+
+setup_twitter_oauth(api_key,api_secret) 
+
+To obtain this tokens and keys you need to log in to Twitter with your account, or create one if necessary. Then you need to setup an application: click on “My Applications” and then click on “Create new application”. 
+Almost thre, fill in the blank boxes and a new screen will appear with your private keys and token. 
+The final step is to install twitteR from GitHub using the devtools package and run the first 5 commands at the beginning of the section. For further instruction refer to: [Twitter Authentication with R]("http://thinktostart.com/twitter-authentification-with-r/"), [Authenticate.twitter]("https://www.rdocumentation.org/packages/vosonSML/versions/0.29.10/topics/Authenticate.twitter") and [Twitter Authentication with R]("https://www.r-bloggers.com/2016/01/twitter-authentication-with-r/").
