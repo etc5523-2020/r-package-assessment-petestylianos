@@ -2,10 +2,13 @@
 % Please edit documentation in R/spinner.R
 \name{spinner}
 \alias{spinner}
-\title{spinner}
+\title{Custom Spinner}
 \usage{
 spinner(output)
 }
+\arguments{
+\item{output}{The servers output that you want to get displayed}
+}
 \description{
-spinner
+Adds a spinner with custom layout to indicate that an output is loading
 }

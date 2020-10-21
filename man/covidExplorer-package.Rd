@@ -6,11 +6,14 @@
 \alias{covidExplorer-package}
 \title{covidExplorer: Contains a Shiny App with Summaries, Analytics and News related to COVID-19}
 \description{
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
 The package deploys a shiny app that allows users to interactively
         browse data regarding the spread of COVID-19 in various countries. The
         purpose of the app is to offer a summary of information regarding 
         COVID-19 with emphasis being given on new cases and latest implemented 
-        measures. The datasets are being updated daily. Figures in the Measures tab can be exported as png images.
+        measures. Finally, the app gives the user to scrape data from Twitter. 
+        The datasets are being updated daily. Figures in the Measures tab can be exported as png images.
 }
 \seealso{
 Useful links:

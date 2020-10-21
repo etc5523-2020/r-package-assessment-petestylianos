@@ -7,8 +7,6 @@
 #'
 #' @source https://stackoverflow.com/questions/46559251/how-to-add-multiple-line-breaks-conveniently-in-shiny
 #'
-#' @return An HTML object
-#'
 #' @export
 #'
 #'

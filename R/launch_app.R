@@ -8,6 +8,7 @@
 #' @param ui a .R script that contains the user interface of the shiny app
 #' @param server a .R script that contains the app's server
 #'
+#' @import shiny
 #' @export
 #'
 launch_app <- function(ui, server) {

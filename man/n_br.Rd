@@ -12,9 +12,6 @@ n_br(n)
 \arguments{
 \item{n}{A non-negative nmeric value}
 }
-\value{
-An HTML object
-}
 \description{
 The function takes as an input a number and adds that many break lines
 in the Shiny ui.
