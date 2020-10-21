@@ -42,10 +42,10 @@ library(covidExplorer)
 covidExplorer::launch_app()
 ```
 
-This is how the app looks like:
+This is how the first tab of the app looks like:
 
 ```{r, echo=FALSE}
-knitr::include_graphics("man/figures/img.gif")
+knitr::include_graphics("man/figures/map.png")
 ```
 
 

@@ -34,9 +34,9 @@ library(covidExplorer)
 covidExplorer::launch_app()
 ```
 
-This is how the app looks like:
+This is how the first tab of the app looks like:
 
-<img src="man/figures/img.gif" width="100%" />
+<img src="man/figures/map.png" width="100%" />
 
 ## Twitter Tab
 
