@@ -25,6 +25,10 @@ with:
 devtools::install_github("etc5523-2020/r-package-assessment-petestylianos")
 ```
 
+## Access the app without loading the package 
+
+The app is also accessible from https://petestylianos.shinyapps.io/covid-explorer/
+
 ## Example
 
 To launch the app:
