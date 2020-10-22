@@ -3,6 +3,7 @@
 export(countryInput)
 export(launch_app)
 export(my_layout)
+export(my_theme)
 export(n_br)
 export(spinner)
 import(htmltools)

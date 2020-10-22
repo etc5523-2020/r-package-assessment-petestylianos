@@ -5,7 +5,7 @@
 #'
 #' @param  n A non-negative nmeric value
 #'
-#' @source https://stackoverflow.com/questions/46559251/how-to-add-multiple-line-breaks-conveniently-in-shiny
+#' @source ![]("https://stackoverflow.com/questions/46559251/how-to-add-multiple-line-breaks-conveniently-in-shiny")
 #'
 #' @export
 #'

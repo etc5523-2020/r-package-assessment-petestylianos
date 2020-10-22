@@ -25,7 +25,7 @@ library(shinyWidgets)
 library(stringr)
 library(tidycovid19)
 library(tidytext)
-library(tidyverse)
+library(dplyr)
 library(twitteR)
 
 

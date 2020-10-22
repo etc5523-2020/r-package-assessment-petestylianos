@@ -4,7 +4,7 @@
 \alias{n_br}
 \title{Adds Specific Number of Break Lines in Shiny Ui}
 \source{
-https://stackoverflow.com/questions/46559251/how-to-add-multiple-line-breaks-conveniently-in-shiny
+\figure{"https://stackoverflow.com/questions/46559251/how-to-add-multiple-line-breaks-conveniently-in-shiny"}
 }
 \usage{
 n_br(n)

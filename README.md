@@ -67,3 +67,55 @@ R](%22http://thinktostart.com/twitter-authentification-with-r/%22),
 [Authenticate.twitter](%22https://www.rdocumentation.org/packages/vosonSML/versions/0.29.10/topics/Authenticate.twitter%22)
 and [Twitter Authentication with
 R](%22https://www.r-bloggers.com/2016/01/twitter-authentication-with-r/%22).
+
+## Required Packages
+
+In order for all tabs of the app to work properly you need to have the
+following packages installed:
+
+``` r
+library(classInt)
+library(coronavirus)
+library(COVID19)
+library(DT)
+library(leaflet)
+library(ggthemes)
+library(glue)
+library(htmlwidgets)
+library(maps)
+library(patchwork)
+library(plotly)
+library(RColorBrewer)
+library(scales)
+library(shiny)
+library(shinycssloaders)
+library(shinydashboard)
+library(shinydashboardPlus)
+library(shinythemes)
+library(shinyWidgets)
+library(stringr)
+library(tidycovid19)
+library(tidytext)
+library(dplyr)
+library(twitteR)
+```
+
+## Exported Fucntions
+
+**my\_theme()**
+
+Use it to add the custom theme found in the app’s figures
+
+``` r
+library(tibble)
+library(ggplot2)
+
+ df <- tibble(x = 1:10,
+               y = log(x))
+ fig <- ggplot(df, aes(x, y)) +
+   geom_line()
+ 
+ covidExplorer::my_theme(fig)
+```
+
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
