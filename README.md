@@ -97,6 +97,7 @@ library(stringr)
 library(tidycovid19)
 library(tidytext)
 library(dplyr)
+library(tidyr)
 library(twitteR)
 ```
 
