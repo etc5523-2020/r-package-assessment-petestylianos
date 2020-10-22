@@ -94,7 +94,7 @@
 <p>You can install the current version from <a href="https://github.com/">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit">
 <span class="co"># install.packages("devtools")</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"etc5523-2020/r-package-assessment-petestylianos"</span><span class="op">)</span></pre></div>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"etc5523-2020/r-package-assessment-petestylianos"</span><span class="op">)</span></pre></div>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
@@ -118,6 +118,53 @@
 <p>access_token_secret &lt;- ‘YOUR ACCESS TOKEN SECRET’</p>
 <p>setup_twitter_oauth(api_key,api_secret)</p>
 <p>To obtain this tokens and keys you need to log in to Twitter with your account, or create one if necessary. Then you need to setup an application: click on “My Applications” and then click on “Create new application”. Almost thre, fill in the blank boxes and a new screen will appear with your private keys and token. The final step is to install twitteR from GitHub using the devtools package and run the first 5 commands at the beginning of the section. For further instruction refer to: <a href="%22http://thinktostart.com/twitter-authentification-with-r/%22">Twitter Authentication with R</a>, <a href="%22https://www.rdocumentation.org/packages/vosonSML/versions/0.29.10/topics/Authenticate.twitter%22">Authenticate.twitter</a> and <a href="%22https://www.r-bloggers.com/2016/01/twitter-authentication-with-r/%22">Twitter Authentication with R</a>.</p>
+</div>
+<div id="required-packages" class="section level2">
+<h2 class="hasAnchor">
+<a href="#required-packages" class="anchor"></a>Required Packages</h2>
+<p>In order for all tabs of the app to work properly you need to have the following packages installed:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/classInt/">classInt</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/RamiKrispin/coronavirus">coronavirus</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://covid19datahub.io">COVID19</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/rstudio/DT">DT</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://rstudio.github.io/leaflet/">leaflet</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://github.com/jrnold/ggthemes">ggthemes</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/tidyverse/glue">glue</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ramnathv/htmlwidgets">htmlwidgets</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">maps</span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://patchwork.data-imaginist.com">patchwork</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://plotly-r.com">plotly</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">RColorBrewer</span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://scales.r-lib.org">scales</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://shiny.rstudio.com">shiny</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/daattali/shinycssloaders">shinycssloaders</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://rstudio.github.io/shinydashboard/">shinydashboard</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/RinteRface/shinydashboardPlus">shinydashboardPlus</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://rstudio.github.io/shinythemes/">shinythemes</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/dreamRs/shinyWidgets">shinyWidgets</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://stringr.tidyverse.org">stringr</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">tidycovid19</span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/juliasilge/tidytext">tidytext</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://lists.hexdump.org/listinfo.cgi/twitter-users-hexdump.org">twitteR</a></span><span class="op">)</span></pre></div>
+</div>
+<div id="exported-fucntions" class="section level2">
+<h2 class="hasAnchor">
+<a href="#exported-fucntions" class="anchor"></a>Exported Fucntions</h2>
+<p><strong>my_theme()</strong></p>
+<p>Use it to add the custom theme found in the app’s figures</p>
+<div class="sourceCode" id="cb4"><pre class="downlit">
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/">tibble</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span>
+
+ <span class="va">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span>,
+               y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">)</span>
+ <span class="va">fig</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span><span class="op">(</span><span class="op">)</span>
+ 
+ <span class="fu">covidExplorer</span><span class="fu">::</span><span class="fu"><a href="reference/my_theme.html">my_theme</a></span><span class="op">(</span><span class="va">fig</span><span class="op">)</span></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-4-1.png" width="100%"></p>
 </div>
 </div>
   </div>
