@@ -13,6 +13,6 @@
 #'
 launch_app <- function(ui, server) {
 
-  source("data-raw/data.R")
+
   shiny::runApp(appDir = system.file("app", package = "covidExplorer"))
 }
