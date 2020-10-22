@@ -41,7 +41,6 @@ Imports:
     magrittr,
     leaflet,
     dplyr,
-    tidycovid19,
     COVID19,
     coronavirus,
     DT,
