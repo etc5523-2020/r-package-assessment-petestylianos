@@ -20,7 +20,7 @@
 #' }
 #'
 #'
-#' @return A Select Input interface for Shiny Apps
+#'
 #'
 #'
 countryInput <- function(id, x) {

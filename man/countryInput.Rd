@@ -12,9 +12,6 @@ server.}
 
 \item{x}{A column from a dataframe or tibble that contains country names.}
 }
-\value{
-A Select Input interface for Shiny Apps
-}
 \description{
 Creates a Shiny Select Input with custom label style to select a country from
 a columns dataset.
@@ -27,6 +24,9 @@ Shiny Shiny Select Input function that appears multiple times in the app's ui.
 \dontrun{
 countryInput(id = "country_cases", x = coronavirus$country)
 }
+
+
+
 
 
 }
