@@ -1,29 +1,4 @@
-  library(classInt)
-  library(coronavirus)
-  library(COVID19)
-  library(DT)
-  library(leaflet)
-  library(ggthemes)
-  library(glue)
-  library(htmlwidgets)
-  library(maps)
-  library(patchwork)
-  library(plotly)
-  library(RColorBrewer)
-  library(scales)
-  library(shiny)
-  library(shinycssloaders)
-  library(shinydashboard)
-  library(shinydashboardPlus)
-  library(shinythemes)
-  library(shinyWidgets)
-  library(stringr)
-  library(tidycovid19)
-  library(tidytext)
-  library(dplyr)
-  library(twitteR)
-
-
+source("data.R")
 
 ui <- fluidPage(
   titlePanel(windowTitle = "Covid Analytics",
