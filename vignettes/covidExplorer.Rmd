@@ -1,0 +1,66 @@
+---
+title: "covidExplorer"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{covidExplorer}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Launch the app
+
+To launch the app in your local RStudio call `launch_app`
+
+```{r setup, eval = FALSE}
+library(covidExplorer)
+covidExplorer::launch_app()
+```
+
+If there is an update in the dataset you will be prompted with the following message:
+
+_Updates are available on the coronavirus Dev version, do you want to update? n/Y_
+
+If you want to get the most recent data enter __Y__ in the console. 
+
+## Purpose of the app
+
+The package deploys a __shiny app__ that allows users to interactively browse data regarding the spread of __COVID-19__ in various countries. The purpose of the app is to offer a summary of information regarding COVID-19 with emphasis being given on new cases and latest implemented __measures__. Finally, the app gives the user to scrape data from __Twitter__. 
+
+## What's inside ?
+
+
+Briefly, the app consists of the following sections:
+
+A. Cases by Country: Includes a Choropleth map in which countries are shaded in proportion to the total cases of COVID-19 in that country. Also, the panel cosists of two Tables that provide statistics related to COVID-19 on both global and country level. The former table is interactive, allowing users to search for their country of choice. Finally, in the bottom of the panel you can find two interactive figures that visualize the growrh in cases of COVID-19 and the death rate of the virus over time by country. 
+
+B. Apple Analytics: Select a country from the select input option and explore data from Apple Mobility Trend Reports for various cities in the world to reveal interesting citizen movement patterns for driving, walking and transit. 
+
+C. Google Analytics: Select a country from the select input option and explore data from Google Mobility Trend Reports for various countries to reveal changes in visits to places compared to a baseline period before the pandemic.
+
+D. Measures: Two interactive figures can be found in this tab. Both of them track measures taken by goverments to prevent the spread of COVID-19. The first figure tracks the number of measures authorities have taken by country across five different categories over time. The second figure provides extensive details about the measures and their implementation. Note that in order to access the second figure you need to click on the legend of the first one in order to select the catgory of your interest.
+
+E. Tweets: This tab is a working project so it is not finaliszed yet. However, you can still select a hastag and search Twitter for the latest 100 tweets. Also, plots illustating a sentiment analysis are included. 
+
+F. About: Current tab, with instruction on how to run the app and details of the creator.
+
+G. Authenticate Twitter Account: Instructions about how to set up a Twitter account and get access to your personal and private key. 
+
+
+## Is this just another Covid-19 dashboard?
+
+Although included in the app, the number of new cases by country along with the country totals is not the main focus of the app. The emphasis of the app is to serve as a substitute of watching the news or browsing in the Web to find news about new measures. In the __Measures__ panel users can quickly get up to date with new measures being implemented. Based on the first figure the user can visually understand how many measures the country’s authorities have taken and also at which areas they are targeting their policies. This, knowledge can be essential to form an opinion regarding how effective the government of the country has been in contaminating the spread of the virus. Finally, when user clicks on one of the categories at the legend of the first graph a second figure named Occurrence of Measures by Category pops-up providing additional information on the specific measures being implemented at the moment. Solely, by looking at the second graph the user gets all information, about what measures she is expected to follow in a matter of seconds, instead of having to browse various websites or watching the news. Moreover, for citizens of countries that are allowed to flight to other countries this figure provides all the necessary information for what documents they are expected to provide at the airport and at what measures they should adhere to.
+
+
+
+
+
+
+
+
