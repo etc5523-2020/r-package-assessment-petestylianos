@@ -47,5 +47,6 @@ Imports:
     maps,
     patchwork,
     plotly,
-    ggplot2
+    ggplot2,
+    tidyr
 VignetteBuilder: knitr
